@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 900,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+div#imagem {
+    box-sizing: border-box;
+    display: block;
+}
+
+div#imagem > img {
+    margin: auto;
+    padding: 25px 54px 17px 54px;
+    height: 100%;
+    width: 75.6%;
+}
+
+div#menuhamburguer {
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 20, 41);
+    display: block;
+    text-align: left;
+    height: 57px;
+    width: 100%;
+}
+
+i#menu {
+    font-size: 28px;
+    font-weight: bolder;
+    padding: 13px;
+    padding-left: 24px;
+    cursor: pointer;
+}
+
+main {
+    padding: 50px;
+}
+
+footer {
+    background-color: rgb(0, 20, 41);
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+footer > p {
+    padding-bottom: 0px;
+    margin: 0px;
+}
