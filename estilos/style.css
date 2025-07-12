@@ -3,14 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
-}
-
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 900,
-  'GRAD' 0,
-  'opsz' 24
+    
 }
 
 div#imagem {
@@ -42,8 +35,45 @@ i#menu {
     cursor: pointer;
 }
 
+menu#itens > ul > li > a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: left;
+    
+    color: rgb(0, 20, 41);
+    border-top: 1px solid rgba(128, 128, 128, 0.272);
+    cursor: pointer;
+}
+
+menu#itens > ul {
+    list-style-type: none;
+}
+
+.menu-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+menu#itens > ul > li > a {
+    padding-left: 29px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 16px;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+}
+
+
+li > a > span > i#add {
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
 main {
-    padding: 50px;
+    padding: 150px;
 }
 
 footer {
