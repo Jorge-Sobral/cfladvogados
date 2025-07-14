@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="estilos/media-query.css">
     
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <div id="imagem">
         <img src="imagens/logo-cfl-advogados-trabalhistas-06-423x134-high.png" alt="">
     </div>
     <header>
         <div id="menuhamburguer">
-            <i id="menu" class="material-symbols-outlined" onclick="clickMenu()">dehaze</i>
+            <i id="menu" class="material-symbols-outlined" onclick="clickMenu()" >dehaze</i>
             <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -37,6 +37,14 @@
         <p>Política de Privacidade e Cookie</p>
     </footer>
     <script>
+        function mudouTamanho() {
+            if(window.innerWidth >= 992) {
+            itens.style.display = 'block'
+            }  else {
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (itens.style.display == 'block') {
                 itens.style.display = 'none'
