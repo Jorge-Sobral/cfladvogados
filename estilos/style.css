@@ -6,6 +6,21 @@
     
 }
 
+header {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 div#imagem {
     box-sizing: border-box;
     display: block;
@@ -21,11 +36,39 @@ div#imagem > img {
 div#menuhamburguer {
     background-color: rgb(245, 245, 245);
     color: rgb(0, 20, 41);
-    display: block;
-    text-align: left;
     height: 57px;
     width: 100%;
+    z-index: 999;
 }
+
+.topo-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 57px;
+    background-color: rgb(245, 245, 245);
+}
+
+.topo-menu > p {
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgb(0, 20, 41);;
+    letter-spacing: 1.5px;
+    font-size: 21px;
+}
+
+.topo-menu > a > p#zap {
+    display: inline-flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #ffa930;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    padding-top: 5px;
+}
+
+
 
 i#menu {
     font-size: 28px;
@@ -35,16 +78,25 @@ i#menu {
     cursor: pointer;
 }
 
+menu#itens > ul > li {
+    border-top: 1px solid rgba(128, 128, 128, 0.272);
+    background-color: rgb(245, 245, 245);
+}
+
+menu#itens > ul > li#fale {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
 menu#itens > ul > li > a{
     text-decoration: none;
     display: block;
-    padding: 10px;
+    margin-left: 20px;
     text-decoration: none;
-    text-align: left;
-    
     color: rgb(0, 20, 41);
-    border-top: 1px solid rgba(128, 128, 128, 0.272);
     cursor: pointer;
+    font-size: 290x;
+    background-color: rgb(245, 245, 245);
 }
 
 menu#itens > ul {
@@ -56,6 +108,18 @@ menu#itens > ul {
   align-items: center;
   gap: 2px;
 }
+
+#itens {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+#itens.aberto {
+    max-height: 500px; /* valor suficiente pra acomodar o menu todo */
+}
+
+
 
 menu#itens > ul > li > a {
     padding-left: 29px;
@@ -72,8 +136,30 @@ li > a > span > i#add {
     vertical-align: middle;
 }
 
-main {
-    padding: 150px;
+div.redesociais {
+    display: flex;
+    padding-left: 190px;
+    gap: 5.5px;
+}
+
+div.redesociais > a > i {
+    display: inline-flex;
+    width: 27px;
+    height: 27px;
+    color: white;
+    font-size: 13px;
+    background-color: #ffa930;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+main > section {
+    padding: 130px;
+    background-image: url(https://www.cfladvogados.com.br/wp-content/uploads/lawyer-who-provides-legal-advice-in-the-office-businessman-and-lawyer-shaking-hands-1-1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 footer {

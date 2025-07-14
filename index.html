@@ -14,9 +14,19 @@
     <div id="imagem">
         <img src="imagens/logo-cfl-advogados-trabalhistas-06-423x134-high.png" alt="">
     </div>
-    <header>
+    <header id="mainHeader">
         <div id="menuhamburguer">
-            <i id="menu" class="material-symbols-outlined" onclick="clickMenu()" >dehaze</i>
+            <div class="topo-menu">
+            <i id="menu" class="material-symbols-outlined" onclick="clickMenu()">dehaze</i>
+            <p>|</p>
+            <a href="#"><p id="zap">WHATSAPP</p></a>
+
+            <div class="redesociais">
+                <a href="https://www.facebook.com/advschinagl/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/eduardofanchioti/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            </div>
+
             <menu id="itens">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -24,34 +34,64 @@
                 <li><a href="#"><span class="menu-item">Ações Trabalhistas <i id="add" class="material-symbols-outlined">add</i></span></a></li>
                 <li><a href="#">Depoimentos</a></li>
                 <li><a href="#">Artigos</a></li>
-                <li><a href="#">Fale Conosco</a></li>
+                <li id="fale"><a href="#">Fale Conosco</a></li>
             </ul>
         </menu>
         </div>
     </header>
     <main>
-
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia unde recusandae officia dolore, quis, aut, molestiae quae iure earum temporibus at consequatur obcaecati! Atque nulla ipsa, temporibus molestiae odit numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis ipsam, dolor maiores quos hic nam obcaecati, voluptatum unde minus dicta, doloremque consectetur dolorem quam assumenda? Amet impedit facilis quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex porro maxime illum quis ab omnis rerum ut reprehenderit. Repellendus blanditiis quos eaque reiciendis mollitia delectus magni placeat fugiat beatae nobis?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia unde recusandae officia dolore, quis, aut, molestiae quae iure earum temporibus at consequatur obcaecati! Atque nulla ipsa, temporibus molestiae odit numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis ipsam, dolor maiores quos hic nam obcaecati, voluptatum unde minus dicta, doloremque consectetur dolorem quam assumenda? Amet impedit facilis quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex porro maxime illum quis ab omnis rerum ut reprehenderit. Repellendus blanditiis quos eaque reiciendis mollitia delectus magni placeat fugiat beatae nobis?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia unde recusandae officia dolore, quis, aut, molestiae quae iure earum temporibus at consequatur obcaecati! Atque nulla ipsa, temporibus molestiae odit numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis ipsam, dolor maiores quos hic nam obcaecati, voluptatum unde minus dicta, doloremque consectetur dolorem quam assumenda? Amet impedit facilis quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex porro maxime illum quis ab omnis rerum ut reprehenderit. Repellendus blanditiis quos eaque reiciendis mollitia delectus magni placeat fugiat beatae nobis?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia unde recusandae officia dolore, quis, aut, molestiae quae iure earum temporibus at consequatur obcaecati! Atque nulla ipsa, temporibus molestiae odit numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi omnis ipsam, dolor maiores quos hic nam obcaecati, voluptatum unde minus dicta, doloremque consectetur dolorem quam assumenda? Amet impedit facilis quos. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex porro maxime illum quis ab omnis rerum ut reprehenderit. Repellendus blanditiis quos eaque reiciendis mollitia delectus magni placeat fugiat beatae nobis?</p>
+        </section>
     </main>
     <footer>
         <p>Copyright © 2024 CFL Advogados. Todos os direitos reservados. Por W-Rank</p>
         <p>Política de Privacidade e Cookie</p>
     </footer>
     <script>
-        function mudouTamanho() {
-            if(window.innerWidth >= 992) {
-            itens.style.display = 'block'
-            }  else {
-                itens.style.display = 'none'
-            }
-        }
+  const itens = document.getElementById('itens');
+  const menuIcone = document.getElementById('menu');
 
-        function clickMenu() {
-            if (itens.style.display == 'block') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'block'
-            }
-        }
-    </script>
+  function mudouTamanho() {
+    if (window.innerWidth >= 992) {
+      itens.classList.remove('aberto');
+      itens.style.maxHeight = 'none'; // garante visibilidade
+      menuIcone.textContent = 'dehaze'; // mantém ícone correto
+    } else {
+      itens.style.maxHeight = null; // deixa controle para a classe CSS
+    }
+  }
+
+  function clickMenu() {
+    if (itens.classList.contains('aberto')) {
+      itens.classList.remove('aberto');
+      menuIcone.textContent = 'dehaze';
+    } else {
+      itens.classList.add('aberto');
+      menuIcone.textContent = 'close';
+    }
+  }
+
+  // Inicializa ao carregar e redimensionar
+  window.addEventListener('load', mudouTamanho);
+  window.addEventListener('resize', mudouTamanho);
+
+  // Sticky header ao rolar
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('mainHeader');
+    const logo = document.getElementById('imagem');
+    const logoHeight = logo.offsetHeight;
+
+    if (window.scrollY > logoHeight) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
+    }
+  });
+</script>
+<script src="https://kit.fontawesome.com/5f92f99a53.js" crossorigin="anonymous"></script>
 </body>
 </html>
