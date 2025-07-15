@@ -7,9 +7,19 @@
     outline: 1px solid red;
 }
 
-@media (max-width: 768px) {
+html, body {
+    overflow-x: hidden;
+}
+
+    @media (max-width: 768px) {
+  .topo-menu {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
   .redesociais {
-    padding-left: 1rem;
+    margin-left: auto;
+    padding: 0; /* Garante que não tenha padding sobrando */
   }
 }
 
@@ -54,7 +64,7 @@ div#menuhamburguer {
     gap: 15px;
     height: 57px;
     background-color: rgb(245, 245, 245);
-    
+    flex-wrap: wrap;
 }
 
 .topo-menu > p {
@@ -146,7 +156,7 @@ li > a > span > i#add {
 
 div.redesociais {
     display: flex;
-    padding-left: 190px;
+    
     gap: 5.5px;
 }
 
