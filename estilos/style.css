@@ -45,9 +45,7 @@ div#imagem {
 
 div#imagem > img {
     margin: auto;
-    padding: 25px 54px 17px 54px;
-    height: 100%;
-    width: 75.6%;
+    width: 100vw;
 }
 
 div#menuhamburguer {
