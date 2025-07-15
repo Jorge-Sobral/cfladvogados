@@ -3,7 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    
+    box-sizing: border-box;
 }
 
 header {
@@ -138,6 +138,7 @@ li > a > span > i#add {
 
 div.redesociais {
     display: flex;
+    padding-left: 190px;
     gap: 5.5px;
 }
 
