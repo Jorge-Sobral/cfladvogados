@@ -4,6 +4,13 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    outline: 1px solid red;
+}
+
+@media (max-width: 768px) {
+  .redesociais {
+    padding-left: 1rem;
+  }
 }
 
 header {
@@ -47,6 +54,7 @@ div#menuhamburguer {
     gap: 15px;
     height: 57px;
     background-color: rgb(245, 245, 245);
+    
 }
 
 .topo-menu > p {
