@@ -41,13 +41,15 @@ header.sticky {
 div#imagem {
     box-sizing: border-box;
     display: flex;
-    width: 90vw;
-    height: 90%;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    padding: 20px 0;         
+
 }
 
 div#imagem > img {
-    align-content: center;
-    align-items: center;
+    
 }
 
 div#menuhamburguer {
