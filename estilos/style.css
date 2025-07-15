@@ -40,12 +40,14 @@ header.sticky {
 
 div#imagem {
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    width: 90vw;
+    height: 90%;
 }
 
 div#imagem > img {
-    margin-left: 33px;
-    width: 90vw;
+    align-content: center;
+    align-items: center;
 }
 
 div#menuhamburguer {
