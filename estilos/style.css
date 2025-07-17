@@ -44,7 +44,6 @@ header.sticky {
 div#imagem {
     box-sizing: border-box;
     display: flex;
-    display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;     /* Centraliza verticalmente */
     padding: 20px 0;
@@ -167,7 +166,6 @@ main {
 }
 
 section#atendimento {
-    display: flexbox;
     padding: 18px;
     background: linear-gradient(to right, rgba(0, 22, 43, 0.486), rgba(0, 0, 0, 0.7)), url(https://www.cfladvogados.com.br/wp-content/uploads/lawyer-who-provides-legal-advice-in-the-office-businessman-and-lawyer-shaking-hands-1-1.jpg) no-repeat top center;;
     color: #ffffff;
@@ -198,42 +196,139 @@ section#atendimento {
     
 }
 
-#atendimento > div#chame {
+#chame, #email {
+    display: block;
+    width: 360px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 2px;
+    margin: 16px auto 0;
+    text-decoration: none;
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#chame {
     background-color: #ffa930;
-    width: 360px;
-    height: 52px;
-    align-content: center;
-    margin: auto;
-    text-align: center;
-    border-radius: 2px;
-}
-
-#atendimento > div#chame > a {
-    text-decoration: none;
     color: white;
-}
-
-#atendimento > div#email {
-    border: 1px solid #ffa930;
-    background-color: transparent;
-    width: 360px;
-    height: 52px;
-    align-content: center;
-    margin: auto;
-    text-align: center;
-    border-radius: 2px;
-    margin-top: 16px;
-}
-
-#atendimento > div#email > a {
-    text-decoration: none;
-    color: #ffa930;
 }
 
 #chame:hover {
     background-color: rgb(255, 149, 0);
-    transition: 0.5;
 }
+
+#email {
+    border: 1px solid #ffa930;
+    background-color: transparent;
+    color: #ffa930;
+}
+
+#email:hover {
+    background-color: rgb(255, 149, 0);
+    color: white;
+}
+
+section#conteudo {
+    margin-top: 36px;
+    padding: 0px 20px;
+}
+
+section#conteudo > em > h2 {
+    font-size: 15.5px;
+    color: #ffa930;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section#conteudo > h1 {
+    font-size: 1.80em;
+    margin-top: 10px;
+    margin-bottom: 19px;
+    font-weight: normal;
+    padding-left: 1.6px;
+    letter-spacing: -1.5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#conteudo > p {
+    font-weight: lighter;
+    color: rgb(84, 73, 73);
+    letter-spacing: .5px;
+    line-height: 1.5;
+}
+
+#advogado {
+    margin-top: 120px;
+    padding: 20px;
+}
+
+.fundo-laranja {
+  position: absolute;
+  bottom: -12px;   /* quanto sai da base */
+  right: -12px;    /* quanto sai da lateral */
+  width: 336px;
+  height: 260px;
+  background-color: #ffa930;
+  z-index: 0;      /* atrás da imagem */
+}
+
+.bloco-foto {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.bloco-foto > img {
+    width: 336px;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.selo {
+    position: absolute;
+    top: -85px;
+    right: -26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    width: 140px;
+    background-color: rgb(255, 165, 38);
+    color: #ffffff;
+    z-index: 3;
+}
+
+.selo > h1 {
+    font-weight: normal;
+    padding-top: 7px;
+    padding-bottom: 3px;
+    font-size: 2.7em;
+    letter-spacing: -5px;
+}
+
+.selo > p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     background-color: rgb(0, 20, 41);
