@@ -256,7 +256,7 @@ section#conteudo > h1 {
 
 #conteudo > p {
     font-weight: lighter;
-    color: rgb(19, 17, 17);
+    color: black;
     letter-spacing: .5px;
     line-height: 1.5;
     padding-left: 10px;
