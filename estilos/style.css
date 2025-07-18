@@ -255,8 +255,8 @@ section#conteudo > h1 {
 }
 
 #conteudo > p {
-    font-weight: lighter;
-    color: black;
+    font-weight: normal;
+    color: rgb(72, 72, 89);
     letter-spacing: .5px;
     line-height: 1.5;
     padding-left: 10px;
@@ -265,9 +265,10 @@ section#conteudo > h1 {
 .decorado > p {
     position: relative;
     z-index: 1;
-    color: #000;
-    font-weight: lighter;
+    color: rgb(72, 72, 89);
+    font-weight: normal;
     line-height: 1.5;
+    padding-left: 10px;
 }
 
 div.decorado {
