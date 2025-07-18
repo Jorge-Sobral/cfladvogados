@@ -9,11 +9,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-}
-
 html, body {
     overflow-x: hidden;
 }
@@ -179,7 +174,7 @@ section#atendimento {
 #atendimento > em > h2 {
     font-size: 16px;
     color: #ffa930;
-    font-weight: ;
+    font-weight: normal;
     padding: 5px;
     padding-top: 30px;
 }
@@ -187,14 +182,14 @@ section#atendimento {
 #atendimento > h1 {
     font-weight: 500;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 32px;
+    font-size: 30px;
     padding-left: 6px;
 }
 
 #atendimento > p {
     padding: 9px;
-    padding-top: 25px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 17px;
     letter-spacing: 1px;
     text-align: left;
@@ -203,15 +198,17 @@ section#atendimento {
 
 #chame, #email {
     display: block;
+    max-width: 97%;
     width: 360px;
     height: 52px;
     line-height: 52px;
     text-align: center;
     border-radius: 2px;
-    margin: 16px auto 0;
+    margin: 16px auto 0 auto;
     text-decoration: none;
     font-weight: normal;
     transition: background-color 0.3s ease, color 0.3s ease;
+    
 }
 
 #chame {
@@ -236,7 +233,7 @@ section#atendimento {
 
 section#conteudo {
     margin-top: 36px;
-    padding: 0px 20px;
+    padding: 0px 10px 0px 8px;
 }
 
 section#conteudo > em > h2 {
@@ -258,7 +255,7 @@ section#conteudo > h1 {
 
 #conteudo > p {
     font-weight: lighter;
-    color: rgb(84, 73, 73);
+    color: rgb(51, 45, 45);
     letter-spacing: .5px;
     line-height: 1.5;
 }
