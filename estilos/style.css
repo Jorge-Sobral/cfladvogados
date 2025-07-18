@@ -254,7 +254,7 @@ section#conteudo > h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#conteudo > p, div.decorado > p {
+#conteudo > p {
     font-weight: lighter;
     color: black;
     letter-spacing: .5px;
@@ -294,13 +294,14 @@ div.triangulo {
 #esquerdo {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 90px;
     margin-left: -8px;
 }
 
 #direito {
     position: absolute;
     right: 0;
+    bottom: 150px;
     margin-right: -9px;
 }
 
@@ -361,6 +362,26 @@ div.triangulo {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 18px;
     margin: 0;
+}
+
+a#chame2 {
+    display: block;
+    max-width: 60%;
+    width: 214px;
+    height: 54px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 2px;
+    margin: 55px 0 auto;
+    text-decoration: none;
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #ffa930;
+    color: white;
+    }
+
+#chame2:hover {
+    background-color: rgb(255, 149, 0);
 }
 
 
