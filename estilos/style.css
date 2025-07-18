@@ -254,7 +254,7 @@ section#conteudo > h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#conteudo > p {
+#conteudo > p, div.decorado > p {
     font-weight: lighter;
     color: black;
     letter-spacing: .5px;
@@ -262,8 +262,50 @@ section#conteudo > h1 {
     padding-left: 10px;
 }
 
+.decorado > p {
+    position: relative;
+    z-index: 1;
+    color: #000;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+div.decorado {
+    position: relative;
+    width: 100%;
+}
+
+div.triangulo {
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 0;
+    pointer-events: none;
+    
+}
+
+#direito, #esquerdo {
+    width: 46px;
+    height: auto;
+}
+
+#esquerdo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: -8px;
+}
+
+#direito {
+    position: absolute;
+    right: 0;
+    margin-right: -9px;
+}
+
 #advogado {
-    margin-top: 120px;
+    margin-top: 100px;
     padding: 20px;
 }
 
