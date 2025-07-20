@@ -231,12 +231,12 @@ section#atendimento {
     color: white;
 }
 
-section#conteudo {
+section.conteudo {
     margin-top: 36px;
     padding: 0px 10px 0px 8px;
 }
 
-section#conteudo > em > h2 {
+section.conteudo > em > h2 {
     font-size: 15.5px;
     color: #ffa930;
     font-weight: bold;
@@ -244,7 +244,7 @@ section#conteudo > em > h2 {
     padding-left: 10px;
 }
 
-section#conteudo > h1 {
+section.conteudo > h1 {
     font-size: 1.80em;
     margin-top: 10px;
     margin-bottom: 19px;
@@ -254,7 +254,7 @@ section#conteudo > h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#conteudo > p {
+.conteudo > p {
     font-weight: normal;
     color: rgb(72, 72, 89);
     letter-spacing: .5px;
@@ -379,9 +379,113 @@ a#chame2 {
     transition: background-color 0.3s ease, color 0.3s ease;
     background-color: #ffa930;
     color: white;
+    margin-bottom: 30px;
     }
 
 #chame2:hover {
+    background-color: rgb(255, 149, 0);
+}
+
+section.servicos {
+    background-color: rgb(242, 242, 242);
+}
+
+.servicos > h2 {
+    text-align: center;
+    color: #ffa930;
+    font-size: 16px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.servicos > h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: -1.1px;
+    font-size: 29px;
+    line-height: 28px;
+    margin-bottom: 47px;
+}
+
+div.acao {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 425px;
+    width: 89%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.acao > i#balance {
+    width: 53px;
+    height: 53px;
+    font-size: 37px;
+    color: white;
+    background-color: #ffa930;
+    text-align: center;
+    align-content: center;
+    border-radius: 2px;
+    font-weight: lighter;
+    margin: 30px 12px 17px 0px;
+}
+
+.acao > em > h2 {
+    color: #ffa930;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 5px;
+}
+
+.acao > h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: -1.1px;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+.linha-separadora {
+    width: 80%;
+    margin: auto;
+    margin: 25px 0px 25px 0px;
+    color: rgb(219, 219, 219);
+}
+
+.acao > p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.3em;
+    text-align: left;
+    width: 80%;
+    color: rgb(71, 71, 71);
+}
+
+#leia {
+    display: block;
+    max-width: 80%;
+    width: 283px;
+    height: 44px;
+    align-content: center;
+    text-align: center;
+    border-radius: 2px;
+    margin: auto;
+    text-decoration: none;
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #ffa930;
+    color: white;
+    margin-bottom: 30px;
+}
+
+#leia:hover {
     background-color: rgb(255, 149, 0);
 }
 
