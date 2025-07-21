@@ -493,9 +493,56 @@ div.acao {
     background-color: rgb(255, 149, 0);
 }
 
-section.defenda{
-    background-image: url(https://www.cfladvogados.com.br/wp-content/uploads/notary-public-wax-stamper-white-envelope-with-brown-wax-seal-golden-stamp-responsive-design-1-1.jpg);
+section.defenda {
+    background: linear-gradient(to right, rgba(1, 32, 61, 0.486), rgba(0, 0, 0, 0.7)), url(https://www.cfladvogados.com.br/wp-content/uploads/notary-public-wax-stamper-white-envelope-with-brown-wax-seal-golden-stamp-responsive-design-1-1.jpg) no-repeat center center;;
+    background-size: 170%;
 }
+
+.defenda > p, .defenda > h1 {
+    color: #ffffff;
+    padding-left: 33px;
+    text-align: left;
+    max-width: 90%;
+}
+
+.defenda > h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 77px;
+    font-size: 30px;
+    letter-spacing: -1.5px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.defenda > p {
+    padding-top: 25px;
+    font-size: 17px;
+    line-height: 25px;
+    padding-bottom: 36px;
+}
+
+.defenda > div {
+    padding-left: 33px;
+    padding-bottom: 59px;
+}
+
+div > #chame3 {
+    display: block;
+    max-width: 60%;
+    width: 214px;
+    height: 54px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 2px;
+    text-decoration: none;
+    font-weight: normal;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #ffa930;
+    color: white;
+    
+    
+}
+
 
 
 
