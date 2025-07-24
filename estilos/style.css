@@ -772,6 +772,16 @@ footer > form > p >#WhatsAppInput {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: #f2f2f2;
   color: #444;
+  position: relative;
+  z-index: 0;
+  transition: border 0.1s ease, background-color 0.1s ease;
+}
+
+#WhatsAppInput:focus {
+  outline: none;
+  border: 2px solid #ffb347;
+  background-color: white;
+  box-shadow: 0 0 0 5px white; /* expande mais */
 }
 
 footer > img {
@@ -789,7 +799,11 @@ footer > .redes {
     gap: 5px;
 }
 
-footer > .redes > i {
+footer > div.redes > a {
+    text-decoration: none;
+}
+
+footer > .redes > a > i {
     background-color: #ffa930;
     width: 28px;
     height: 28px;
@@ -797,6 +811,12 @@ footer > .redes > i {
     align-content: center;
     border-radius: 2px;
     font-size: 14px;
+    color: #ffffff;
+    transition: transform 0.1s ease;
+}
+
+.redes > a > i:active {
+    transform: scale(1.1);
 }
 
 hr#linha {
@@ -804,17 +824,152 @@ hr#linha {
     margin: auto;
     margin-top: 30px;
     margin-bottom: 35px;
-    border: 0.5px solid #2b3b4d;
+    border: 0.1px solid #2b3b4d;
 }
 
+.endereco > h1 {
+    padding-left: 23px;
+    color: #ffa82e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
 
+.item-endereco {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 18px 0;
+  text-decoration: none;
+  color: inherit;
+  padding-left: 23px;
+}
 
+.item-endereco i {
+  min-width: 40px;
+  height: 40px;
+  color: #ffa930;
+  background-color: #001429;
+  border: 2px solid #ffa930;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+}
 
+.texto-endereco h1 {
+  color: #ffa930;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  margin: 0;
+}
 
+.texto-endereco p {
+  color: #f2f2f2;
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1.4;
+}
 
+section.partefinal {
+    padding-left: 23px;
+}
 
-.final > p {
-    padding-bottom: 0px;
-    margin: 0px;
+.partefinal > .atesc > h1 {
+    color: #ffa930;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 18px;
+    padding-top: 18px;
+}
+
+.partefinal > .atesc > p > i {
+    color: #faa62f;
     font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.partefinal > .atesc > p:hover {
+    color: #ed8f02;
+    transition: .5s;
+    cursor: pointer;
+}
+
+i#check {
+    font-weight: bold;
+}
+
+.contato > h1 {
+    padding-left: 23px;
+    color: #ffa82e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding-top: 25px;
+}
+
+.item-contato {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 18px 0;
+  text-decoration: none;
+  color: inherit;
+  padding-left: 23px;
+}
+
+.item-contato > i {
+  min-width: 40px;
+  height: 40px;
+  color: #ffa930;
+  background-color: #001429;
+  border: 2px solid #ffa930;
+  border-radius: 2px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.texto-contato > h1 {
+  color: #ffa930;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+.texto-contato > p {
+  color: #f2f2f2;
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+.creditos > p {
+    margin: 0px auto;
+    font-size: 15px;
+    text-align: center;
+    max-width: 80%;
+    line-height: 23px;
+}
+
+.creditos > p#politica {
+    padding-bottom: 28px;
+}
+
+#whats {
+  position: fixed;
+  bottom: 15px;
+  right: 17px;
+  z-index: 9999;
+  background-color: #25D366;
+  color: white;
+  border: 2px solid white;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 5px;
+  line-height: 60px;
+  font-size: 43px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
 }
