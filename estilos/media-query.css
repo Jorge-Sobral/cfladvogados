@@ -1,5 +1,255 @@
 @charset "UTF-8";
 
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    div#imagem > img {
+        width: 275px;
+        height: 86px;
+    }
+
+    div#menuhamburguer {
+        width: 100%;
+        height: 66px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .topo-menu {
+        height: 66px;
+        box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.137); /* sombra interna no fundo */; 
+    }
+
+    .redesociais {
+        margin-left: auto;
+        margin-right: 18px;
+        gap: 10px !important;
+    }
+
+    .texto-siganos {
+    display: inline-block;
+    font-weight: lighter;
+    color: #4d484d;
+    font-size: 14px;
+    margin: auto;
+    padding-right: 13px;
+    letter-spacing: 0.5px;
+  }
+
+    .topo-menu > a > p#zap {
+    font-size: 15px;
+  }
+
+    section#atendimento {
+        padding-top: 53px;
+        padding-left: 23px;
+        background: linear-gradient(to right, rgba(1, 8, 31, 0.856), rgba(0, 66, 97, 0.11)), url(https://www.cfladvogados.com.br/wp-content/uploads/lawyer-who-provides-legal-advice-in-the-office-businessman-and-lawyer-shaking-hands-1-1.jpg);;
+        background-size: 110%;
+        background-size: cover;
+        background-position: center center;
+        
+    }
+
+    #atendimento > em > h2 {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    #atendimento > h1 {
+        width: 45%;
+        font-size: 42px;
+        line-height: 45px;
+    }
+
+    #atendimento > p {
+        width: 47%;
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+
+    #chame, #email {
+        margin: 0px;
+        margin-left: 8px;
+        margin-bottom: 14px;
+    }
+
+    #email {
+        margin-bottom: 75px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 992px) {
     i#aborg {
         display: none;

@@ -154,13 +154,16 @@ div.redesociais > a > i {
     width: 28px;
     height: 28px;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
     background-color: #ffa930;
     align-items: center;
     justify-content: center;
     border-radius: 2px;
 }
 
+.texto-siganos {
+  display: none;
+}
 main {
     padding-top: 57px;
 }
