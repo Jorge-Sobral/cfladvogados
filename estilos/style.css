@@ -263,6 +263,7 @@ section.conteudo > h1 {
     letter-spacing: .5px;
     line-height: 1.5;
     padding-left: 10px;
+    margin-bottom: 12px;
 }
 
 .decorado > p {
@@ -975,4 +976,8 @@ i#check {
   font-size: 43px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
+}
+
+#oculto {
+    display: none;
 }

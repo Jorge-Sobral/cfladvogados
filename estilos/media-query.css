@@ -73,6 +73,97 @@
     #email {
         margin-bottom: 75px;
     }
+
+    .conteudo {
+        width: 47%;
+        float: left;
+        padding-left: 20px !important;
+        margin-top: 45px !important;
+    }
+
+    .conteudo > em > h2 {
+        margin-top: 20px;
+        font-size: 15px !important;
+    }
+
+    .conteudo > h1 {
+        font-size: 2.29em !important;
+        line-height: 36px;
+        padding-bottom: 8px;
+    }
+
+    .conteudo > p {
+        display: block ;
+        position: relative;
+        font-size: 15px;
+        line-height: 22px;
+        width: 90%;
+        z-index: 1 !important;
+        margin-bottom: 10px;
+    }
+
+    #advogado {
+        display: flex;
+        flex-direction: column;
+        float: right;
+    }
+
+    .bloco-foto {
+        margin-top: -100px;
+        margin-right: 20px;
+    }
+
+    .bloco-foto > img {
+        display: inline-block;
+        width: 370px;
+        height: 453px;
+        object-fit: cover;
+        
+    }
+
+    .fundo-laranja {
+        width: 370px;
+        height: 453px;
+        margin-right: 5px;
+    }
+
+    #esquerdo, #direito {
+        position: absolute;
+        width: 85px;
+        height: 90px;
+        top: -260px;
+        z-index: 0;
+    }
+    
+    #esquerdo {
+        margin-left: -20px;
+    }
+
+    #direito {
+        margin-top: -155px;
+        margin-right: -441px;
+    }
+
+    .selo {
+        position: absolute;
+        width: 177px;
+        height: 152px;
+        left: 227px;
+    }
+
+    .selo > h1 {
+        font-weight: bold;
+        font-size: 55px;
+    }
+
+    .selo > p {
+        display: none;
+    }
+
+    #oculto {
+        display: inline-block;
+        font-size: 17px;
+    }
 }
 
 
