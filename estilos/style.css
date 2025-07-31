@@ -599,7 +599,7 @@ section.avaliacao {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.ouvir > .caso {
+.ouvir > .casos > .caso {
     position: absolute;
     top: 180px;
     left: 0;
@@ -616,20 +616,20 @@ section.avaliacao {
     align-items: center;
 }
 
-.ouvir > .caso > i {
+.ouvir > .casos > .caso > i {
     color: #ffa930;
     font-size: 45px;
     padding: 25px;
 }
 
-.ouvir > .caso > h1 {
+.ouvir > .casos > .caso > h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: lighter;
     letter-spacing: -1px;
     padding-bottom: 10px;
 }
 
-.ouvir > .caso > p {
+.ouvir > .casos >.caso > p {
     text-align: center;
     width: 80%;
 }
@@ -965,5 +965,9 @@ i#check {
 }
 
 #oculto {
+    display: none;
+}
+
+#ocultado {
     display: none;
 }

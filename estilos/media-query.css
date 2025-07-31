@@ -249,6 +249,140 @@
     .satisfeito, .acoes, .anos, .feedback, .ouvir > h2 {
         padding-bottom: 40px;
     }
+
+    .ouvir {
+        padding-bottom: 10px;
+    }
+
+    #fundo {
+        background: linear-gradient(to right, rgba(1, 32, 61, 0.486), rgba(0, 0, 0, 0.7)), url(../imagens/the-legal-execution-department-makes-an-appointment-with-the-customer-to-sign-a-mediation-agreement-1.jpg) no-repeat !important;;
+        background-position: center center !important;
+        background-size: cover !important;
+    }
+
+    #fundo > h1 {
+        font-size: 35px !important;
+        width: 80%;
+        padding-bottom: 5px;
+    }
+
+    .casos {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .caso {
+        width: 257px !important;
+        height: 338px !important;
+        position: initial !important;
+        margin-top: -80px !important;
+    }
+
+    .caso > i {
+        padding-bottom: 2px !important;
+    }
+
+    .caso > h1 {
+        font-size: 22px;
+    }
+
+    .caso > p {
+        font-size: 16px;
+        line-height: 24px;
+        width: 90% !important;
+    }
+
+    a.chame4, a#inverso {
+        width: 205px !important;
+        height: 53px !important;
+    }
+
+    footer > h1 {
+        text-align: left;
+        padding-left: 28px;
+        width: 60%;
+        font-size: 21px;
+        letter-spacing: 0.2px;
+    }
+
+    footer > form > p >#WhatsAppInput {
+    display: block;
+    width: 100%;
+    max-width: 290px;
+    height: 50px;
+    margin: 0 0 0 28px;
+    padding: 0 15px;
+    font-size: 18px;
+    border: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f2f2f2;
+    color: #444;
+    position: relative;
+    z-index: 0;
+    transition: border 0.1s ease, background-color 0.1s ease;
+    }
+
+    #WhatsAppInput:focus {
+    outline: none;
+    border: 2px solid #ffb347;
+    background-color: white;
+    box-shadow: 0 0 0 5px white; /* expande mais */
+    }
+    
+    #botaoSolicitar {
+        height: 50px;
+        width: 146px;
+        margin-top: -50px;
+        margin-right: 363px;
+    }
+
+    footer > img {
+        height: 71px !important;
+        width: 219px !important;
+        margin-top: -151px;
+        margin-right: 31px;
+    }
+
+    .redes {
+        margin-left: 700px !important;
+    }
+
+    .texto-endereco > p {
+        width: 60%;
+    }
+
+    #um {
+        margin-top: -220px;
+        margin-left: 408px;
+    }
+
+    .contato {
+        margin-top: -185px;
+        margin-left: 408px;
+    }
+
+    hr#linha {
+        width: 95%;
+    }
+
+    .creditos > p {
+        display: none;
+    }
+
+    .creditos {
+        display: flex;
+    }
+
+    #ocultado {
+        display: inline-block;
+        align-content: center;
+        align-items: center;
+        margin: 0px auto 25px auto;
+        font-size: 15px;
+        text-align: center;
+        max-width: 100%;
+        line-height: 23px;
+    }
 }
 
 
