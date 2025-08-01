@@ -37,8 +37,6 @@ header.sticky {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 div#imagem {
@@ -55,11 +53,12 @@ div#imagem > img {
 }
 
 div#menuhamburguer {
-    background-color: rgb(245, 245, 245);
     color: rgb(0, 20, 41);
     height: 57px;
     width: 100%;
     z-index: 999;
+    background-color: rgb(245, 245, 245);
+    box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.137); /* sombra interna no fundo */;
 }
 
 .topo-menu {
@@ -67,9 +66,15 @@ div#menuhamburguer {
     align-items: center;
     gap: 1px;
     height: 57px;
-    background-color: rgb(245, 245, 245);
     flex-wrap: wrap;
-    box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.137); /* sombra interna no fundo */;
+}
+
+hr#rodar {
+    transform: rotate(90deg);
+    width: 22px;
+    height: 1px;
+    background-color: black;
+    border: 0px solid black;
 }
 
 .topo-menu > p {
@@ -907,7 +912,7 @@ i#check {
   padding-left: 23px;
 }
 
-.item-contato > i {
+.item-contato > i, #fa-whatsapp {
   min-width: 40px;
   height: 40px;
   color: #ffa930;
@@ -964,10 +969,6 @@ i#check {
   transition: transform 0.2s ease;
 }
 
-#oculto {
-    display: none;
-}
-
-#ocultado {
+#oculto, #ocultado, .contatos, .invisivel {
     display: none;
 }

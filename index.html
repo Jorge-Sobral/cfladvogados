@@ -14,13 +14,30 @@
 </head>
 <body onresize="mudouTamanho()">
     <div id="imagem">
-        <img src="imagens/logo-cfl-advogados-trabalhistas-06-423x134-high.png" alt="">
+      <img src="imagens/logo-cfl-advogados-trabalhistas-06-423x134-high.png" alt="">
+      <a href="#" class="contatos">
+        <i class="fa-solid fa-phone-flip"></i>
+        <div class="texto-contatos">
+          <h1>Telefone</h1>
+          <p>11 3798-7042</p>
+        </div>
+      </a>
+
+      <a href="#" class="contatos">
+        <div id="whatsappp">
+          <img src="imagens/icons8-whatsapp-23.png" alt="">
+        </div>
+        <div class="texto-contatos">
+          <h1>WhatsApp</h1>
+          <p>11 9 7033-5005</p>
+        </div>
+      </a>
     </div>
     <header id="mainHeader">
         <div id="menuhamburguer">
             <div class="topo-menu">
             <i id="menu" class="material-symbols-outlined" onclick="clickMenu()">dehaze</i>
-            <p>|</p>
+            <hr id="rodar">
             <a href="#"><p id="zap">WHATSAPP</p></a>
 
             <div class="redesociais">
@@ -32,11 +49,11 @@
 
             <menu id="itens">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">O Escritório</a></li>
-                <li><a href="#"><span class="menu-item">Ações Trabalhistas <i id="add" class="material-symbols-outlined">add</i></span></a></li>
-                <li><a href="#">Depoimentos</a></li>
-                <li><a href="#">Artigos</a></li>
+                <li><a href="#">Home</a></li><hr class="invisivel">
+                <li><a href="#">O Escritório</a></li><hr class="invisivel">
+                <li><a href="#"><span class="menu-item">Ações Trabalhistas <i id="add" class="material-symbols-outlined">add</i></span></a></li><hr class="invisivel">
+                <li><a href="#">Depoimentos</a></li><hr class="invisivel">
+                <li><a href="#">Artigos</a></li><hr class="invisivel">
                 <li id="fale"><a href="#">Fale Conosco</a></li>
             </ul>
         </menu>
