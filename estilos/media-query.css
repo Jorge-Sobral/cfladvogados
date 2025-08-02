@@ -389,8 +389,8 @@
 
     #imagem > img {
         width: 250px !important;
-        height: 70px !important;
-        margin-left: -580px;
+        height: 80px !important;
+        margin-right: 325px;
     }
 
     .contatos {
@@ -400,13 +400,13 @@
         margin: 18px 0;
         text-decoration: none;
         color: inherit;
-        padding-left: 23px;
+        padding-left: 35px;
     }
 
     .contatos > i, #whatsappp {
         display: flex;
-        min-width: 40px;
-        height: 40px;
+        min-width: 46px;
+        height: 46px;
         color: #ffa930;
         justify-content: center;
         align-items: center;
@@ -415,7 +415,7 @@
         border-radius: 2px;
         text-align: center;
         line-height: 40px;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     #whatsappp > img {
@@ -424,17 +424,39 @@
     }
 
     .texto-contatos > h1 {
-        color: #ffa930;
+        color: #000000;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 18px;
+        font-size: 15px;
         margin: 0;
     }
 
     .texto-contatos > p {
-        color: #f2f2f2;
+        color: #000000;
         font-size: 14px;
-        margin-top: 4px;
+        margin-top: 1px;
         line-height: 1.4;
+        font-weight: bold;
+    }
+
+    .marque {
+        display: flex;
+        height: 48px;
+        width: 231px;
+        border-radius: 2px;
+        color: white;
+        font-size: 13px;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        background-color: #ffa930;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        margin-left: 70px;
+    }
+
+    .marque:hover {
+        background-color: #ff9500;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     i#menu {
@@ -468,14 +490,20 @@
     box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.137);
     }
 
-  menu#itens {
+    .topo-menu {
+        height: 58px !important;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    menu#itens {
     display: flex !important;
     justify-content: flex-start;
     width: 100%;
     background: none;
     }
 
-  menu#itens > ul {
+    menu#itens > ul {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -484,12 +512,12 @@
     margin: 0;
     }
 
-  menu#itens > ul > li, #fale{
+    menu#itens > ul > li, #fale{
     border: none;
     background-color: transparent;
     }
 
-  menu#itens > ul > li > a {
+    menu#itens > ul > li > a {
     text-decoration: none;
     color: #001133;
     font-weight: 500;
@@ -506,7 +534,139 @@
     border: 0px solid black;
     }
 
-    
+    menu#itens > ul > li > a#ahome {
+        color: #ff9e4a;
+        font-weight: bold;
+        border-top: 3px solid #ff9e4a;
+    }
 
+    menu#itens > ul > li > a  {
+        font-weight: bold;
+    }
+
+    menu#itens > ul > li > a:hover {
+        color: #ff9e4a;
+        font-weight: bold;
+        border-top: 3px solid #ff9e4a;
+        transition: 0.3s ease, color 0.3s ease;
+    }
+
+    #rodar {
+        margin-left: -250px;
+    }
+
+    #zap {
+        font-size: 12px !important;
+        padding-right: 30px !important;
+        margin-bottom: 1px;
+    }
+
+    #atendimento {
+        background: linear-gradient(to right, rgba(2, 39, 87, 0.856), rgba(0, 66, 97, 0.11)), url(https://www.cfladvogados.com.br/wp-content/uploads/lawyer-who-provides-legal-advice-in-the-office-businessman-and-lawyer-shaking-hands-1-1.jpg);;
+        background-size: 100% !important;
+        background-size: cover;
+        background-position: center center;
+        height: 655px;
+    }
+
+    #atendimento > em > h2 {
+        font-size: 14px;
+        padding-bottom: 10px;
+        margin-top: 62px;
+        margin-left: 60px;
+    }
+
+    #atendimento > h1 {
+        width: 45%;
+        font-size: 67px;
+        line-height: 65px;
+        margin-left: 60px;
+    }
+
+    #atendimento > p {
+        width: 47%;
+        font-size: 15px;
+        margin-bottom: 13px;
+        margin-left: 60px;
+    }
+
+    #chame, #email {
+        margin-left: 60px;
+        height: 52px;
+        width: 208px;
+    }
     
+    #email {
+        margin-top: -52px;
+        margin-left: 282px !important;
+    }
+
+    .conteudo {
+        width: 48%;
+        float: left;
+        padding-left: 30px !important;
+        margin-top: 45px !important;
+        background-color: white;
+        margin-bottom: 70px;
+    }
+
+    .conteudo > em > h2 {
+        margin-top: 0px;
+        font-size: 15px !important;
+    }
+
+    .conteudo > h1 {
+        font-size: 3em !important;
+        line-height: 46px;
+        padding-bottom: 8px;
+    }
+
+    .conteudo > p {
+        display: block ;
+        position: relative;
+        font-size: 15px;
+        line-height: 22px;
+        width: 90%;
+        z-index: 1 !important;
+        margin-bottom: 10px;
+    }
+
+    .triangulo {
+        position: relative;
+        
+    }
+
+    .triangulo > img {
+        position: absolute;
+        left: -20px;
+        top: -450px;
+        width: 97.7vw !important;
+        
+    }
+
+    #advogado {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        float: right;
+    }
+
+    .bloco-foto {
+        margin-top: -100px;
+        margin-right: 20px;
+    }
+
+    .bloco-foto > img {
+        display: inline-block;
+        width: 593px;
+        height: 450px;
+        object-fit: cover;
+        
+    }
+
+    .fundo-laranja {
+        width: 593px;
+        height: 443px;
+        margin-right: 5px;
+    }
 }

@@ -969,6 +969,6 @@ i#check {
   transition: transform 0.2s ease;
 }
 
-#oculto, #ocultado, .contatos, .invisivel {
+#oculto, #ocultado, .contatos, .invisivel, .marque {
     display: none;
 }
