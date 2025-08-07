@@ -918,4 +918,54 @@
     .redes {
         margin-left: calc(91.5% - 50px) !important;
     }
+
+    .endereco {
+        padding-left: 25px;
+    }
+
+    .texto-endereco > p {
+        width: 60%;
+    }
+
+    #um {
+        margin-top: -220px;
+        margin-left: 496px;
+    }
+
+    .contato {
+        margin-top: -222px;
+        margin-left: 1062px;
+    }
+
+    #dois {
+        margin-top: -210px;
+        margin-left: 805px;
+        margin-bottom: 40px !important;
+    }
+
+    hr#linha {
+        margin-top: 80px;
+        width: 93.5%;
+    }
+
+    hr#linhaum {
+        width: 93.5%;
+        margin: auto;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        border: 0.1px solid #2b3b4d;
+    }
+
+    .creditos > p {
+        margin-left: 41px;
+        margin-top: -10px;
+    }
+
+    #politica {
+        margin-right: 50px;
+    }
+
+    .creditos {
+        display: flex;
+    }
 }
